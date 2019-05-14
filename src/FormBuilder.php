@@ -1,6 +1,6 @@
 <?php
 
-namespace NetoJose\Bootstrap4Forms;
+namespace ImanSugirman\Bootstrap4Forms;
 
 class FormBuilder {
 
