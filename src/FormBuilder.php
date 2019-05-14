@@ -304,7 +304,7 @@ class FormBuilder {
             $props['autocomplete'] = $this->_Fautocomplete;
         }
 
-        $attrs = $this->_buildAttrs($props, ['class-form-control']);
+        $attrs = $this->_buildAttrs($props, ['class-c-input']);
 
         $ret = '<form ' . $attrs . '>';
 
@@ -739,7 +739,7 @@ class FormBuilder {
                 break;
         }
 
-        if (!in_array('class-form-control', $ignore)) {
+        if (!in_array('class-c-input', $ignore)) {
             $props['class'] .= $formControlClass;
         }
 
@@ -960,7 +960,7 @@ class FormBuilder {
     private function _renderCheckboxOrRadio(): string
     {
         $this->_class .= ' custom-control-input';
-        $attrs = $this->_buildAttrs(["type" => $this->_type, "value" => $this->_meta['value']], ['class-form-control']);
+        $attrs = $this->_buildAttrs(["type" => $this->_type, "value" => $this->_meta['value']], ['class-c-input']);
         $inline = $this->_checkInline ? ' form-check-inline' : '';
         $label  = $this->_e($this->_label);
         $id = $this->_getId();
