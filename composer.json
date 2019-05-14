@@ -1,0 +1,39 @@
+{
+    "name": "imansugirman/laravel-customui-forms",
+    "type": "package",
+    "description": "Custom UI from Forked NetoJose Form Bootstrap 4 Builder for Laravel 5",
+    "keywords": [
+        "laravel",
+        "customui",
+        "forms",
+        "php",
+        "form-builder",
+        "composer",
+        "package"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iman Sugirman",
+            "email": "iman.sugirman@icloud.com"
+        }
+    ],
+    "version": "2.0.6",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ImanSugirman\\Bootstrap4Forms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ImanSugirman\\Bootstrap4Forms\\Bootstrap4FormsServiceProvider"
+            ],
+            "aliases": {
+                "Form": "ImanSugirman\\Bootstrap4Forms\\Bootstrap4FormsFacade"
+            }
+        }
+    }
+}
